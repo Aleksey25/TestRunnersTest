@@ -1,0 +1,15 @@
+plugins {
+    id 'java-library'
+}
+
+test {
+    useTestNG()
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    api "org.testng:testng:7.6.1"
+}

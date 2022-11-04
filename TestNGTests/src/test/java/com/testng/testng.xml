@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test suite From XML">
+    <test name="Установки - откаты всех тестов">
+        <packages>
+            <package name="com.testng.initrollbacktests"/>
+        </packages>
+    </test>
+
+    <test name="Тесты пакета 1">
+        <packages>
+            <package name="com.testng.testpackage1"/>
+        </packages>
+    </test>
+
+    <test name="Тесты пакета 2 (отдельный класс)">
+        <classes>
+            <class name="com.testng.testpackage2.ThirdClass"/>
+        </classes>
+    </test>
+
+    <test name="Тесты зависимостей групп">
+        <classes>
+            <class name="com.testng.testpackage2.GroupsOfTestsDependencies"/>
+        </classes>
+    </test>
+
+    <test name="Тесты зависимостей групп через ХМЛ">
+        <groups>
+            <dependencies>
+                <group name="testGroup2" depends-on="testGroup" />
+                <group name="testGroup3" depends-on="testGroup2 testGroup4" />
+            </dependencies>
+        </groups>
+        <classes>
+            <class name="com.testng.testpackage2.GroupsOfTestsDependencies2"/>
+        </classes>
+    </test>
+</suite>
