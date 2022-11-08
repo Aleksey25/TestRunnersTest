@@ -10,6 +10,7 @@ test {
     options.suites("src/test/resources/testng.xml")
     options.suites("src/test/resources/testng2.xml")
     options.suites("src/test/resources/testng3.xml")
+    options.suites("src/test/resources/testng4.xml")
 }
 
 repositories {
