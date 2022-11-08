@@ -18,6 +18,21 @@ public class Tests {
         }
     }
 
+    public static void longTestMethod(String testName) {
+        try {
+            System.out.println("Тест " + testName + " начат");
+            for (int i = 0; i < 10; i++) {
+                System.out.println(".");
+                Thread.sleep(2000);
+            }
+            Assert.assertEquals(testName, testName);
+            System.out.println("Тест " + testName + " закончен");
+            System.out.println("--------------------------------\n");
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
 
     public static void failTestMethod(String testName) {
         try {

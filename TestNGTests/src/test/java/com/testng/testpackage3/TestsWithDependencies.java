@@ -45,6 +45,6 @@ public class TestsWithDependencies {
     @Test(testName = "Тест 7 в классе груп зависимостей",
             dependsOnMethods = "TestDependsOn")
     public void TestDependsOnFail(){
-        failTestMethod("зависит от теста Test2WithPriority1");
+        testMethod("зависит от теста Test2WithPriority1");
     }
 }
