@@ -8,7 +8,8 @@ compileTestJava.options.encoding = 'UTF-8'
 test {
     useTestNG()
     options.suites("src/test/resources/testng.xml")
-    //options.suites("src/test/resources/testng2.xml")
+    options.suites("src/test/resources/testng2.xml")
+    options.suites("src/test/resources/testng3.xml")
 }
 
 repositories {
