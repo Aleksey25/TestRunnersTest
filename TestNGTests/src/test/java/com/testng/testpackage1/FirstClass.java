@@ -1,5 +1,8 @@
 package com.testng.testpackage1;
+
 import org.testng.annotations.*;
+
+import static demo.Tests.testMethod;
 
 
 public class FirstClass {
@@ -31,14 +34,14 @@ public class FirstClass {
     @Test(suiteName = "Test suite From XML",
             testName = "Класс 1 тест 1")
     public void firstClassTest1(){
-        System.out.println("Тест 1 в классе FirstClass");
+        testMethod("1 в классе FirstClass");
     }
 
 
     @Test(suiteName = "Test suite From XML",
     testName = "Класс 1 тест 2")
     public void firstClassTest2(){
-        System.out.println("Тест 2 в классе FirstClass");
+        testMethod("2 в классе FirstClass");
     }
 }
 
