@@ -3,7 +3,7 @@
 <suite name="Test suite From XML">
     <test name="Init/RollbackOfAllTests">
         <packages>
-            <package name="com.testng.initrollbacktests"/>
+            <package name="com.testng.testpackage1.initrollbacktests"/>
         </packages>
     </test>
 

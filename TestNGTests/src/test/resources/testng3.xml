@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test suite From XML 3">
+    <test name="Group dependencies in class">
+        <classes>
+            <class name="com.testng.testpackage3.TestsWithDependencies"/>
+        </classes>
+    </test>
+</suite>
