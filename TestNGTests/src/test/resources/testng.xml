@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test suite From XML">
+    <test name="Init/RollbackOfAllTests">
+        <packages>
+            <package name="com.testng.initrollbacktests"/>
+        </packages>
+    </test>
+
+    <test name="Tests from package 1">
+        <packages>
+            <package name="com.testng.testpackage1"/>
+        </packages>
+    </test>
+
+    <test name="Tests from package 2 (define by class)">
+        <classes>
+            <class name="com.testng.testpackage2.ThirdClass"/>
+        </classes>
+    </test>
+
+</suite>

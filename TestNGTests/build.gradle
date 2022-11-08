@@ -2,8 +2,13 @@ plugins {
     id 'java-library'
 }
 
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
+
 test {
     useTestNG()
+    options.suites("src/test/resources/testng.xml")
+    //options.suites("src/test/resources/testng2.xml")
 }
 
 repositories {

@@ -6,7 +6,7 @@ public class Tests {
     public static void testMethod(String testName) {
         try {
             System.out.println("Тест " + testName + " начат");
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 5; i++) {
                 System.out.println(".");
                 Thread.sleep(200);
             }
