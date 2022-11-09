@@ -10,7 +10,7 @@ public class SimpleRun {
         Tests.simple("beforeSuite");
     }
 
-    @AfterSuite(alwaysRun = true)
+    @AfterSuite
     public void afterSuite(){
         Tests.simple("afterSuite");
     }
@@ -21,7 +21,7 @@ public class SimpleRun {
         Tests.simple("beforeTest");
     }
 
-    @AfterTest(alwaysRun = true)
+    @AfterTest
     public void afterTest(){
         Tests.simple("afterTest");
     }
@@ -31,7 +31,7 @@ public class SimpleRun {
         Tests.simple("beforeClass");
     }
 
-    @AfterClass(alwaysRun = true)
+    @AfterClass
     public void afterClass(){
         Tests.simple("afterClass");
     }
