@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Test suite From XML 2">
+<suite name="Test suite with group Dependencies">
     <test name="Group dependencies in class">
         <classes>
             <class name="com.testng.testpackage2_groupDependens.GroupsOfTestsDependencies"/>
