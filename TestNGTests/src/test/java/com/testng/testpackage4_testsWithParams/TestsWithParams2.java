@@ -1,4 +1,4 @@
-package com.testng.tetspackage4_testsWithParams;
+package com.testng.testpackage4_testsWithParams;
 
 import demo.Tests;
 import org.testng.annotations.Parameters;
