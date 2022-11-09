@@ -11,6 +11,7 @@ test {
     options.suites("src/test/resources/testng2_groupDepends.xml")
     options.suites("src/test/resources/testng3_TestDepends.xml")
     options.suites("src/test/resources/testng4_testsWithParams.xml")
+    options.suites("src/test/resources/testng5_testsWithParallel.xml")
 }
 
 repositories {
