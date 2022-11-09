@@ -1,4 +1,4 @@
-package com.testng.testpackage1.initrollbacktests;
+package com.testng.testpackage1_justrun.pacgeforAll.initrollbacktests;
 
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;

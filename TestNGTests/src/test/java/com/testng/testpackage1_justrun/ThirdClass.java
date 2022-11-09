@@ -1,4 +1,4 @@
-package com.testng.testpackage2;
+package com.testng.testpackage1_justrun;
 
 import org.testng.annotations.Test;
 

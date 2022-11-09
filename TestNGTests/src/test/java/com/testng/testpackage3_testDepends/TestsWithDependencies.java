@@ -1,4 +1,4 @@
-package com.testng.testpackage3;
+package com.testng.testpackage3_testDepends;
 
 import org.testng.annotations.Test;
 
@@ -42,6 +42,7 @@ public class TestsWithDependencies {
         failTestMethod("зависит от теста Test2WithPriority1");
     }
 
+    //Этот тест не пойдет, потому что тот от которого он зависит упал
     @Test(testName = "Тест 7 в классе груп зависимостей",
             dependsOnMethods = "TestDependsOn")
     public void TestDependsOnFail(){

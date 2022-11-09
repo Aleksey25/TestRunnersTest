@@ -1,4 +1,4 @@
-package com.testng.testpackage2;
+package com.testng.testpackage2_groupDependens;
 
 import org.testng.annotations.AfterGroups;
 import org.testng.annotations.BeforeGroups;
@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import static demo.Tests.testMethod;
 
-public class GroupsOfTestsDependencies2 {
+public class GroupsOfTestsDependencies {
 
     @BeforeGroups( groups = {"testGroup"})
     public void beforeGroup1(){
@@ -28,15 +28,14 @@ public class GroupsOfTestsDependencies2 {
         System.out.println("Откат группы тестов testGroup2");
     }
 
-
-
-    @Test(groups = {"testGroup3"},
+    @Test(dependsOnGroups = {"testGroup2"},
             testName = "Тест 4 в классе груп зависимостей")
     public void testClass4_1() {
-        testMethod("выполняется после группы тестов testGroup2 и testGroup4");
+        testMethod("выполняется после группы тестов testGroup2");
     }
 
-    @Test(groups = {"testGroup2"},
+    @Test(dependsOnGroups = {"testGroup"},
+            groups = {"testGroup2"},
             testName = "Тест 1 в классе груп зависимостей")
     public void testClass4_2() {
         testMethod("выполняется после группы тестов testGroup " +
@@ -53,13 +52,6 @@ public class GroupsOfTestsDependencies2 {
             testName = "Тест 3 в классе груп зависимостей")
     public void testClass4_4() {
         testMethod("2 из группы тестов testGroup");
-    }
-
-
-    @Test(groups = {"testGroup4"},
-            testName = "Тест 5 в классе груп зависимостей")
-    public void testClass4_5() {
-        testMethod("из группы тестов testGroup4");
     }
 
 

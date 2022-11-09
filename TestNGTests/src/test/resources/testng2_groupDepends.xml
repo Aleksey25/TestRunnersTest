@@ -3,7 +3,7 @@
 <suite name="Test suite From XML 2">
     <test name="Group dependencies in class">
         <classes>
-            <class name="com.testng.testpackage2.GroupsOfTestsDependencies"/>
+            <class name="com.testng.testpackage2_groupDependens.GroupsOfTestsDependencies"/>
         </classes>
     </test>
 
@@ -15,7 +15,7 @@
             </dependencies>
         </groups>
         <classes>
-            <class name="com.testng.testpackage2.GroupsOfTestsDependencies2"/>
+            <class name="com.testng.testpackage2_groupDependens.GroupsOfTestsDependencies2"/>
         </classes>
     </test>
 </suite>

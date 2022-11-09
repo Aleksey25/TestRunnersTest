@@ -6,12 +6,12 @@
         <parameter name="a" value="param a"/>
         <parameter name="b" value="param b"/>
         <classes>
-            <class name="com.testng.tetspackage4.TestsWithParams"/>
+            <class name="com.testng.tetspackage4_testsWithParams.TestsWithParams"/>
         </classes>
     </test>
     <test name="Tests with parameters 2">
         <classes>
-            <class name="com.testng.tetspackage4.TestsWithParams2"/>
+            <class name="com.testng.tetspackage4_testsWithParams.TestsWithParams2"/>
         </classes>
     </test>
 </suite>

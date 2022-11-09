@@ -3,7 +3,7 @@
 <suite name="Test suite From XML 3">
     <test name="Test dependencies and priorities in class">
         <classes>
-            <class name="com.testng.testpackage3.TestsWithDependencies"/>
+            <class name="com.testng.testpackage3_testDepends.TestsWithDependencies"/>
         </classes>
     </test>
 </suite>
