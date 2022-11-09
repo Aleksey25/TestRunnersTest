@@ -48,4 +48,9 @@ public class Tests {
             throw new RuntimeException(e);
         }
     }
+
+    public static void simple(String testName) {
+        System.out.println(testName);
+        System.out.println("--------------------------------\n");
+    }
 }
