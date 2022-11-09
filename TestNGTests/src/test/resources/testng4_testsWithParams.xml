@@ -10,6 +10,13 @@
         </classes>
     </test>
     <test name="Tests with parameters 2">
+        <parameter name="a" value="param A-2 "/>
+        <parameter name="b" value="param B-2"/>
+        <classes>
+            <class name="com.testng.testpackage4_testsWithParams.TestsWithParams"/>
+        </classes>
+    </test>
+    <test name="Tests with parameters 3">
         <classes>
             <class name="com.testng.testpackage4_testsWithParams.TestsWithParams2"/>
         </classes>

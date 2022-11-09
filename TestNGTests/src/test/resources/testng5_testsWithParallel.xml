@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Test suite with parallel run">
+<suite name="Test suite with parallel run" parallel="methods" thread-count="3">
     <test name="Parallel test 1">
         <classes>
             <class name="com.testng.testpackage5_testsWithParallelRun.ParallelTest1"/>
