@@ -20,12 +20,12 @@ public class FirstClass {
 
     @BeforeMethod()
     public void firstClassTestInit2(){
-        System.out.println("Инит каждого теста в классе 1");
+        System.out.println("Инит текущего теста в классе 1");
     }
 
     @AfterMethod()
     public void firstClassTestRollBack2(){
-        System.out.println("Откат каждого теста в классе 1\n");
+        System.out.println("Откат текущего теста в классе 1\n");
     }
 
 
