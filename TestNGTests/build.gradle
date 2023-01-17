@@ -7,10 +7,10 @@ compileTestJava.options.encoding = 'UTF-8'
 
 test {
     useTestNG()
-    options.suites("src/test/resources/testng1_justRun.xml")
-    options.suites("src/test/resources/testng2_groupDepends.xml")
-    options.suites("src/test/resources/testng3_TestDepends.xml")
-    options.suites("src/test/resources/testng4_testsWithParams.xml")
+    //options.suites("src/test/resources/testng1_justRun.xml")
+    //options.suites("src/test/resources/testng2_groupDepends.xml")
+    //options.suites("src/test/resources/testng3_TestDepends.xml")
+    //options.suites("src/test/resources/testng4_testsWithParams.xml")
     options.suites("src/test/resources/testng5_testsWithParallel.xml")
 }
 
@@ -19,5 +19,6 @@ repositories {
 }
 
 dependencies {
+    api "com.codeborne:selenide:6.11.0"
     api "org.testng:testng:7.6.1"
 }
