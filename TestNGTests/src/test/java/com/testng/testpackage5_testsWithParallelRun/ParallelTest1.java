@@ -7,7 +7,7 @@ public class ParallelTest1 {
 
     @Test (testName = "test 1 for parallel run")
     public void parallelTest1(){
-        Web.runUI("https://www.google.com/");
+        Web.runUI("https://www.ryanair.com/ua/uk");
     }
 
     @Test (testName = "test 2 for parallel run")
